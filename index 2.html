@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Spirit of Solstice — a free winter tale of folklore, wonder, family, and the stories we pass from one generation to the next.">
+  <title>The Spirit of Solstice</title>
+
+  <style>
+    :root {
+      --bg: #f1eadb;
+      --paper: #f7f1e5;
+      --ink: #28251f;
+      --muted: #6f695e;
+      --accent: #6e3528;
+      --line: #c9bca5;
+      --button: #2f3b31;
+      --button-hover: #1f2921;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top, rgba(255,255,255,0.55), transparent 42rem),
+        var(--bg);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(92%, 760px);
+      margin: 0 auto;
+      padding: 56px 0 72px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      font-size: 0.78rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.5rem, 7vw, 4.7rem);
+      line-height: 0.98;
+      font-weight: 500;
+      letter-spacing: -0.03em;
+    }
+
+    .tagline {
+      max-width: 620px;
+      margin: 22px auto 38px;
+      font-size: clamp(1.05rem, 2.7vw, 1.35rem);
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .cover-wrap {
+      width: min(78vw, 390px);
+      margin: 0 auto 38px;
+    }
+
+    .cover-wrap img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid rgba(60, 50, 40, 0.18);
+      box-shadow: 0 18px 42px rgba(45, 36, 28, 0.18);
+    }
+
+    .rule {
+      width: 88px;
+      height: 1px;
+      margin: 38px auto;
+      background: var(--line);
+    }
+
+    .synopsis {
+      max-width: 650px;
+      margin: 0 auto;
+      font-size: 1.06rem;
+      text-align: left;
+    }
+
+    .download-section {
+      margin-top: 42px;
+      padding-top: 36px;
+      border-top: 1px solid var(--line);
+    }
+
+    .download-section h2 {
+      margin: 0 0 8px;
+      font-size: 1.55rem;
+      font-weight: 500;
+    }
+
+    .download-section p {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .button {
+      display: inline-block;
+      min-width: 170px;
+      padding: 13px 20px;
+      border: 1px solid var(--button);
+      border-radius: 3px;
+      background: var(--button);
+      color: #fff;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.92rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+
+    .button:hover {
+      background: var(--button-hover);
+      transform: translateY(-1px);
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: var(--muted);
+      border-color: var(--line);
+      cursor: default;
+      pointer-events: none;
+    }
+
+    footer {
+      margin-top: 56px;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    footer span {
+      display: inline-block;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+    }
+
+    @media (max-width: 520px) {
+      main {
+        padding-top: 38px;
+      }
+
+      .synopsis {
+        font-size: 1rem;
+      }
+
+      .button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <p class="eyebrow">A Winter Tale</p>
+
+    <h1>The Spirit of Solstice</h1>
+
+    <p class="tagline">
+      Books get sold. Stories get told. Legends get passed on.
+    </p>
+
+    <!-- Rename your cover image to cover.jpg, or change the filename below. -->
+    <div class="cover-wrap">
+      <img src="cover.jpg" alt="Cover of The Spirit of Solstice">
+    </div>
+
+    <div class="rule"></div>
+
+    <section class="synopsis" aria-label="Book synopsis">
+      <p>
+        In the far north, where winter narrows the world to darkness, hunger,
+        and firelight, a family is forced to reconsider what abundance truly
+        means. Their story becomes entwined with a mysterious ranger, his
+        reindeer, an ancient mushroom, and a lesson about the wonder children
+        possess before the world teaches them to forget it.
+      </p>
+
+      <p>
+        <em>The Spirit of Solstice</em> is a reimagining of winter folklore —
+        a story about family, scarcity, wonder, and the way legends change as
+        they pass from one person to another.
+      </p>
+    </section>
+
+    <section class="download-section" aria-label="Download the book">
+      <h2>Read the Story</h2>
+      <p>No account. No checkout. No mailing list. Just the story.</p>
+
+      <div class="buttons">
+        <!-- Rename your PDF to spirit-of-solstice.pdf, or change the filename below. -->
+        <a class="button" href="spirit-of-solstice.pdf" download>
+          Download PDF
+        </a>
+
+        <!-- Replace these disabled buttons with links when the files are ready. -->
+        <span class="button secondary">EPUB — Coming Soon</span>
+        <span class="button secondary">DOCX — Coming Soon</span>
+      </div>
+    </section>
+
+    <footer>
+      <span>Pass it on.</span>
+    </footer>
+  </main>
+</body>
+</html>
